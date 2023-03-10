@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height: 100vh;
+
+}
+
+#timer {
+    font-size: 126.166px;
+    line-height: 148px;
+    border-radius: 24.8489px;
+    color: #323238;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+#displaybutton {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+ }
+
+#displaysound {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+main {
+    display: flex;
+    place-items: center;
+    justify-self: center;
+    gap: 150px;
+}
+
+.florest, .fire, .rain, .coffee{
+    padding: 48px 47px 48px 46px;
+    background: rgba(186, 183, 183, 0.63);
+    border-radius: 24px;
+    transition: background .6s
+}
+
