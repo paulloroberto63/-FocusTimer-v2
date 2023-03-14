@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    
+   transition: background 1s;
+}
+
+#timer {
+    font-size: 126.166px;
+    line-height: 148px;
+    border-radius: 24.8489px;
+    color: #323238;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.displaybutton {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+ }
+
+.displaysound {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main {
+    display: flex;
+    place-items: center;
+    justify-self: center;
+    gap: 150px;
+}
+
+.florest , .fire , .rain , .coffee {
+
+    padding: 20px 28px 28px 28px;
+    background: #29292E;
+    border-radius: 24px;
+    transition: background .6s;
+    position: relative;
+
+}
+
+
+.rain svg path, .florest svg path, .coffee svg path, .fire svg path {
+    fill: #ffffff;
+    
+}
+
+.slide {
+  margin-top: 40px;
+  cursor: pointer;
+}
+.slide input {
+  width: 80px;
+  
+}
+
+.button {
+    position: absolute;
+    width: 44px;
+    height: 40px;
+    left: 1177px;
+    top: 60px;
+}
+
+.hide {
+   display: none;
+}
+
+.dark {
+    background-color: #121214;
+    color: #ffffff;
+}
+
+
+
+.dark #light {
+    fill: #ffffff;
+}
+
+.dark #timer {
+    color: #ffffff;
+}
+
+.dark .displaybutton .play svg path,
+.dark .displaybutton .stop svg path,
+.dark .displaybutton .augment svg path,
+.dark .displaybutton .reduce svg path {
+  fill: #ffffff
+}
+
+
+.dark .florest,
+.dark .rain,
+.dark .coffee,
+.dark .fire{
+    background-color: #29292E;
+}
+
+
+.dark .florest svg path,
+.dark .rain svg path,
+.dark .coffee svg path,
+.dark .fire svg path {
+    fill: #ffffff;
+}
